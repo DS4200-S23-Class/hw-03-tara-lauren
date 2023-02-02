@@ -4,7 +4,7 @@
 <head>
     <meta charset=utf-8/>
     <title>hw-03</title>
-     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 
@@ -12,54 +12,67 @@
     <h1 class="centered">hw-03: Interactive Webpage, and Marks & Channels</h1>
 
     <div class="row">
+
         <div class="column">
             <img src="img/vis1.png" alt="Visualization 1" width="300" height="300"/>
             <img src="img/vis2.png" alt="Visualization 2" width="300" height="300"/>
         </div>
+
         <div class="column">
             <ul>
                 <li> Visualization 1 </li>
                     <ul>
                         <li> Marks: 
                             <ul> 
-                                <li>Area (states), line/area?? (votes), bottom votes?</li>
+                                <li>Area (state map and electoral vote bar)</li>
+                                <li>Points (NE and ME electoral votes)</li>
                             </ul>
                         </li>
                         <li> Channels:
                             <ul> 
-                                <li> Colors (represent if majority voted for Clinton (blue) or Trump (red))</li>
-                                <li> Shapes(represent shape of each US state).</li> </ul>
+                                <li>Colors (represent if majority voted for Clinton (blue) or Trump (red))</li>
+                                <li>Shapes (represent shape of each US state)</li> 
+                                <li>Horizontal position (the amount of electoral votes for each candidate.)</li> 
+                            </ul>
                         <li> Colormaps:
                             <ul>
-                                <li class="space"> __, represents __ </li>
+                                <li>Categorical colormap, represents what political party was voted for (blue is democrat, red is republican).  </li>
                             </ul>
                              </li>
                     </ul> 
-             </ul>
+            </ul>
 
-                <ul>
+            <br>
+            <br>
+            <br>
+
+            <ul>
                 <li> Visualization 2 </li>
                     <ul>
                         <li> Marks:
                             <ul>
-                                <li> Points (on the graph) </li>
+                                <li>Area (the scoring value bar)</li>
+                                <li>Points (they make up the graph)</li>
                             </ul>
                         </li>
                         <li> Channels:
                             <ul>
-                                <li> Colors(represents scoring value) </li>
-                                <li> Shape (Hexagons, represents balls??)</li>
+                                <li>Position (both, x represents exit velocity, y represents launch angle)</li>
+                                <li>Color hue (represents scoring value)</li>
+                                <li>Color luminance (to represent LWTS of each data point)</li>
+                                <li>Shape (hexagons, represents batted balls)</li>
+                                <li>Horizontal position (scoring value bar)</li>
                             </ul> 
                         </li>
                         <li> Colormaps:
                             <ul>
-                                <li> __, represents __ </li>
+                                <li> Divergent colormap, represents the scoring value of each batted ball. The white in the middle is the average scoring value while the pink represents an extreme to the left (below avg.) and the orange is an extreme to the right (above avg.).</li>
                             </ul>
                         </li>
                     </ul> 
-                 </ul>
-
+            </ul>
         </div>
+
     </div>
 
 <h3 class="centered">Acknowledgements</h3>
