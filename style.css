@@ -1,0 +1,16 @@
+body {
+	font-family: Arial;
+}
+
+.centered {
+	text-align: center;
+	color: blueviolet;
+}
+
+.row {
+  display: flex;
+}
+
+.column {
+  flex: 50%;
+}
