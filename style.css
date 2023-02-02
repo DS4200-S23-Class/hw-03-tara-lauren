@@ -2,6 +2,14 @@ body {
 	font-family: Arial;
 }
 
+.orig_color {
+	background-color: white;
+}
+
+.changed_color {
+	background-color: blue;
+}
+
 .centered {
 	text-align: center;
 }
@@ -15,4 +23,7 @@ img  {
  display: block;
 }
 
+.space{
+  margin: 10px 0;
+}
 
