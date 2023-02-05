@@ -1,3 +1,5 @@
-function changeBackground(color) {
-	let color = document.getElementByClassName(targetButton)
+function changeColor() {
+  var element = document.body;
+  element.classList.toggle("changed_col");
 }
+

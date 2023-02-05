@@ -1,17 +1,16 @@
 body {
 	font-family: Arial;
-}
-
-.orig_color {
 	background-color: white;
-}
-
-.changed_color {
-	background-color: blue;
+	color: black;
 }
 
 .centered {
 	text-align: center;
+}
+
+.changed_col {
+	background-color: pink;
+	color: black;
 }
 
 .row {
@@ -19,7 +18,7 @@ body {
 }
 
 
-img  {
+img {
  display: block;
 }
 
