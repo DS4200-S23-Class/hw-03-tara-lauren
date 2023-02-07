@@ -16,16 +16,18 @@
     <!-- button -->
     <button type="button" onClick="changeColor()">Change Background Color</button>
 
-    <!-- div that we will modify with js -->
+    <!-- div that we will modify with js ???-->
    
     <div class="row">
 
         <div class="column">
-            <img src="img/vis1.png" alt="Visualization 1" width="500" height="500"/>
-            <img src="img/vis2.png" alt="Visualization 2" width="500" height="500"/>
-            <img src="img/diamond.png" alt="Visualization 3" width="500" height="500"/>
+            <img src="img/vis1.png" alt="Visualization 1" width="600" height="600"/>
+            <img src="img/vis2.png" alt="Visualization 2" width="600" height="600"/>
+            <img src="img/diamond.png" alt="Visualization 3" width="600" height="600"/>
         </div>
 
+
+        <!-- visualizations -->
         <div class="column">
             <ul>
                 <li> Visualization 1 </li>
@@ -38,19 +40,22 @@
                         </li>
                         <li> Channels:
                             <ul> 
-                                <li>Colors (represent if majority voted for Clinton (blue) or Trump (red)) 
+                                <li>Color hue (represent if majority voted for Clinton (blue) or Trump (red)) 
                                     <ul> 
-                                        <li> Good choice, colors contrast each other and make it easy for viewers to see who women in all the regions would be voting for. </li>
+                                        <li>Categorical attribute</li>
+                                        <li>Good choice, colors contrast each other and make it easy for viewers to see who women in all the regions would be voting for. </li>
                                     </ul>
                                 </li>
                                 <li>Shapes (represent shape of each US state) 
                                     <ul> 
-                                        <li> Good choice, as visually showing the shapes of the states helps show the dispersion of what the party each area would be voting for throughout the country. </li>
+                                        <li>Categorical attribute</li>
+                                        <li>Good choice, as visually showing the shapes of the states helps show the dispersion of what the party each area would be voting for throughout the country. </li>
                                     </ul>
                                 </li> 
                                 <li>Horizontal position (the amount of electoral votes for each candidate.) 
                                     <ul> 
-                                        <li> Good choice as it shows the breakdown of votes very easily as it is a bar, so the majority or division is clearly visualizaed. </li>
+                                        <li>Ordered attribute</li>
+                                        <li>Good choice as it shows the breakdown of votes very easily as it is a bar, so the majority or division is clearly visualizaed. </li>
                                     </ul>
                                 </li>
                             </ul>
@@ -58,7 +63,8 @@
                             <ul>
                                 <li>Categorical colormap, represents what political party was voted for (blue is democrat, red is republican).  
                                     <ul> 
-                                        <li> Good choice, as these colors are already associate with the different political parties and thus make it easier for viewers to understand what they represent. They are contrasting enough of colors where it is easy to look at the map and understand the dispersion of votes.</li>
+                                        <li>Categorical attribute</li>
+                                        <li>Good choice, as these colors are already associate with the different political parties and thus make it easier for viewers to understand what they represent. They are contrasting enough of colors where it is easy to look at the map and understand the dispersion of votes.</li>
                                     </ul>
                                 </li>
                             </ul>
@@ -66,8 +72,6 @@
                     </ul> 
             </ul>
 
-            <br>
-            <br>
             <br>
             <br>
             <br>
@@ -86,26 +90,31 @@
                             <ul>
                                 <li>Position (both, x represents exit velocity, y represents launch angle) 
                                     <ul> 
-                                        <li> Good choice because viewers can easily compare exit velocity with launch angle by looking at the axes. </li>
+                                        <li>Ordered attribute</li>
+                                        <li>Good choice because viewers can easily compare exit velocity with launch angle by looking at the axes. </li>
                                     </ul>
                                 </li>
                                 <li>Color hue (represents scoring value) 
                                     <ul> 
-                                        <li> Good choice, the color makes it easy for viewers to see the dispersion of scoring values based on angle and exit velocity as oranger colors are above average, white is average, and as it gets purpler, it is below. </li>
+                                        <li>Categorical attribute</li>
+                                        <li>Good choice, using purple and orange as the two extremes for colors was smart because they are on opposite sides of the color wheel, so it is easy to see which batters have above vs. below scoring average. </li>
                                     </ul>
                                 </li>
                                 <li>Color luminance (to represent LWTS of each data point) <ul> 
-                                        <li> idk </li>
+                                    <li>Ordered attribute</li>
+                                    <li>Good choice, the color makes it easy for viewers to see the dispersion of scoring values based on angle and exit velocity as oranger colors are above average, white is average, and as it gets purpler, it is below </li>
                                     </ul>
                                 </li>
                                 <li>Shape (hexagons, represents batted balls)
                                      <ul> 
-                                        <li> Points would have also worked but the hexagons are a good coice as the points blend more making it easy to see trends in the relationship between velocity and angle with scoring value. </li>
+                                        <li>Categorical attribute</li>
+                                        <li>Points would have also worked but the hexagons are a good coice as the points blend more making it easy to see trends in the relationship between velocity and angle with scoring value. </li>
                                     </ul>
                                 </li>
                                 <li>Horizontal position (scoring value bar) 
                                     <ul> 
-                                        <li> Good choice, as it makes it easy for viewers to reference the scoring value colors on the bar with the graph. Having the values shown with horizontal position on the bar also makes it easier for viewers to grasp how moving across the bar would represent different scoring values. </li>
+                                        <li>Ordered attribute</li>
+                                        <li>Good choice, as it makes it easy for viewers to reference the scoring value colors on the bar with the graph. Having the values shown with horizontal position on the bar also makes it easier for viewers to grasp how moving across the bar would represent different scoring values. </li>
                                     </ul>
                                 </li>
                             </ul> 
@@ -114,7 +123,8 @@
                             <ul>
                                 <li> Divergent colormap, represents the scoring value of each batted ball. The white in the middle is the average scoring value while the pink represents an extreme to the left (below avg.) and the orange is an extreme to the right (above avg.).
                                      <ul> 
-                                        <li> Good choice, as the different colors are easy to understand, since white is a neutral color and represents average, while a brighter color like orange represents above average while pink represents below average. The extremes are different enough colors to make it easily comprehendible. </li>
+                                        <li>Ordered attribute</li>
+                                        <li>Good choice, as the different colors are easy to understand, since white is a neutral color and represents average, while a brighter color like orange represents above average while pink represents below average. The extremes are different enough colors to make it easily comprehendible. </li>
                                     </ul>
                                 </li>
                             </ul>
@@ -135,13 +145,15 @@
                         <li> Channels:
                             <ul>
                                 <li>Color hue (each represents a different color of diamond)
-                                    <ul> 
-                                        <li> Good choice, as representing the colors of the diamonds with those colors on the graphs makes it very clear to viewers what each bar is representing. </li>
+                                    <ul>
+                                        <li>Categorical attribute</li>
+                                        <li>Good choice, as representing the colors of the diamonds with those colors on the graphs makes it very clear to viewers what each bar is representing. </li>
                                     </ul>
                                 </li>
                                 <li>Position (both, x represents diamond color, y represents total price for that diamond) 
                                     <ul> 
-                                        <li> Good choice, as having color versus price on the x and y axis make it clear to users the relationship between color and price/ how color affects the price of the diamond. </li>
+                                        <li>Ordered attribute</li>
+                                        <li>Good choice, as having color versus price on the x and y axis make it clear to users the relationship between color and price/ how color affects the price of the diamond. </li>
                                     </ul>
                                 </li>
                             </ul> 
@@ -150,7 +162,8 @@
                             <ul>
                                 <li>Categorical colormap, each bar represents a different color of diamond.
                                      <ul> 
-                                        <li> Good choice, as it distinctly shows each dimamond as the color it is, making it clear what each bar represents. </li>
+                                        <li>Cateogrical attribute</li>
+                                        <li>Good choice, as it distinctly shows each dimamond as the color it is, making it clear what each bar represents. </li>
                                     </ul>
                                 </li>
                             </ul>
@@ -161,6 +174,8 @@
 
     </div>
 
+
+<!-- acknowledgments -->
 <h3 class="centered">Acknowledgements</h3>
 <div>
     <ul>
